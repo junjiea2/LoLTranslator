@@ -1,0 +1,50 @@
+<Window x:Class="LoLTranslator.App.SelectionOverlay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="选择聊天框区域"
+        WindowStyle="None"
+        WindowState="Maximized"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        Background="#88000000"
+        Topmost="True"
+        ShowInTaskbar="False"
+        Cursor="Cross"
+        Loaded="Window_Loaded"
+        KeyDown="Window_KeyDown"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        MouseMove="Window_MouseMove"
+        MouseLeftButtonUp="Window_MouseLeftButtonUp">
+
+    <Grid>
+        <Canvas x:Name="OverlayCanvas">
+            <Border x:Name="SelectionBorder"
+                    Visibility="Collapsed"
+                    BorderBrush="#38BDF8"
+                    BorderThickness="3"
+                    Background="#2238BDF8"/>
+        </Canvas>
+
+        <Border HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="0,30,0,0"
+                Padding="20,12"
+                CornerRadius="10"
+                Background="#EE111827">
+
+            <StackPanel>
+                <TextBlock Text="请拖动鼠标框选英雄联盟聊天框"
+                           Foreground="White"
+                           FontSize="18"
+                           FontWeight="SemiBold"
+                           HorizontalAlignment="Center"/>
+
+                <TextBlock Margin="0,5,0,0"
+                           Text="松开鼠标确认，按 Esc 取消"
+                           Foreground="#CBD5E1"
+                           FontSize="13"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SlangGraph.Core\SlangGraph.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML.OnnxRuntime.DirectML" Version="1.22.0" />
+    <PackageReference Include="OpenCvSharp4" Version="4.10.0.20240616" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.10.0.20240616" />
+    <PackageReference Include="Clipper2" Version="1.5.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\data\runtime\lol-conversation-intents.v0.1.json"
+          Link="data\runtime\lol-conversation-intents.v0.1.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\lol-slang-v0.1.jsonl"
+          Link="data\lol-slang-v0.1.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\annotations\lol-chat-annotations.v0.1.jsonl"
+          Link="data\annotations\lol-chat-annotations.v0.1.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\inbox\ocr-text-inbox.example.jsonl"
+          Link="data\inbox\ocr-text-inbox.example.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\core\communication.v0.2.jsonl"
+          Link="data\packs\core\communication.v0.2.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\lol\slang-graph.v0.3.0.jsonl"
+          Link="data\packs\lol\slang-graph.v0.3.0.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\lol\domain-lexicon.v0.1.champion-official.rc.2.jsonl"
+          Link="data\packs\lol\domain-lexicon.v0.1.champion-official.rc.2.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\lol\domain-lexicon.v0.1.candidate.2.jsonl"
+          Link="data\packs\lol\domain-lexicon.v0.1.candidate.2.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+
+    <None Include="..\..\data\packs\localization\lol-renderings.v0.1.0.jsonl"
+          Link="data\packs\localization\lol-renderings.v0.1.0.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\runtime\lol-reviewed-runtime-terms.v0.1.jsonl"
+          Link="data\runtime\lol-reviewed-runtime-terms.v0.1.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\runtime\lol-client-item-display-aliases.v0.1.jsonl"
+          Link="data\runtime\lol-client-item-display-aliases.v0.1.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\runtime\official-trilingual-runtime-terms.v0.1.jsonl"
+          Link="data\runtime\official-trilingual-runtime-terms.v0.1.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\runtime\official-trilingual-runtime-term-ambiguities.v0.1.jsonl"
+          Link="data\runtime\official-trilingual-runtime-term-ambiguities.v0.1.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\runtime\player-feedback-service.v0.1.json"
+          Link="data\runtime\player-feedback-service.v0.1.json"
+          CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
