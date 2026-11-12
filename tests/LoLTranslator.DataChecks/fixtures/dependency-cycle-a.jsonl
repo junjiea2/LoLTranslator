@@ -1,0 +1,1 @@
+{"record_type":"pack","schema_version":"slang-graph/0.2","pack_id":"pack.test.cycle.a","pack_version":"0.1.0","dependencies":[{"pack_id":"pack.test.cycle.b","version_range":"0.1.*"}],"status":"draft"}
