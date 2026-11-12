@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\LoLTranslator.App\LoLTranslator.App.csproj" />
+    <ProjectReference Include="..\..\src\SlangGraph.Core\SlangGraph.Core.csproj" />
+    <None Include="..\..\data\lol-slang-v0.1.jsonl"
+          Link="data\lol-slang-v0.1.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\annotations\lol-chat-annotations.v0.1.jsonl"
+          Link="data\annotations\lol-chat-annotations.v0.1.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\inbox\ocr-text-inbox.example.jsonl"
+          Link="data\inbox\ocr-text-inbox.example.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\lol\slang-graph.v0.2.example.jsonl"
+          Link="data\packs\lol\slang-graph.v0.2.example.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\lol\slang-graph.v0.2.batch-001.candidate.jsonl"
+          Link="data\packs\lol\slang-graph.v0.2.batch-001.candidate.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\lol\slang-graph.v0.2.candidate.4.jsonl"
+          Link="data\packs\lol\slang-graph.v0.2.candidate.4.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\lol\slang-graph.v0.3.0-rc.1.jsonl"
+          Link="data\packs\lol\slang-graph.v0.3.0-rc.1.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\lol\slang-graph.v0.3.0.jsonl"
+          Link="data\packs\lol\slang-graph.v0.3.0.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\lol\domain-lexicon.v0.1.candidate.1.jsonl"
+          Link="data\packs\lol\domain-lexicon.v0.1.candidate.1.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\lol\domain-lexicon.v0.1.candidate.1.metadata.jsonl"
+          Link="data\packs\lol\domain-lexicon.v0.1.candidate.1.metadata.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\lol\domain-lexicon.v0.1.candidate.2.jsonl"
+          Link="data\packs\lol\domain-lexicon.v0.1.candidate.2.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\localization\lol-renderings.v0.1.candidate.1.jsonl"
+          Link="data\packs\localization\lol-renderings.v0.1.candidate.1.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\localization\lol-renderings.v0.1.0-rc.1.jsonl"
+          Link="data\packs\localization\lol-renderings.v0.1.0-rc.1.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\localization\lol-renderings.v0.1.0.jsonl"
+          Link="data\packs\localization\lol-renderings.v0.1.0.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\collection\lol\holdout-0.3.0-rc.1.jsonl"
+          Link="data\collection\lol\holdout-0.3.0-rc.1.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\core\communication.v0.2.jsonl"
+          Link="data\packs\core\communication.v0.2.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\packs\software-collaboration\slang-graph.v0.2.example.jsonl"
+          Link="data\packs\software-collaboration\slang-graph.v0.2.example.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\runtime\lol-reviewed-runtime-terms.v0.1.jsonl"
+          Link="data\runtime\lol-reviewed-runtime-terms.v0.1.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\runtime\lol-client-item-display-aliases.v0.1.jsonl"
+          Link="data\runtime\lol-client-item-display-aliases.v0.1.jsonl"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="fixtures\*.jsonl"
+          Link="data\fixtures\%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
