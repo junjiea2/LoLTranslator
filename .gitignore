@@ -505,3 +505,7 @@ $RECYCLE.BIN/
 *.exe
 *.dll
 *.zip
+
+!/data/collection/lol/real-screenshot-shadow-001/
+!/data/collection/lol/real-screenshot-shadow-001/runtime-normalization-candidate.jsonl
+!/data/collection/lol/real-screenshot-shadow-001/run005-review-normalization.jsonl
